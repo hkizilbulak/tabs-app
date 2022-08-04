@@ -20,7 +20,11 @@ const App = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <section className="section loading">
+        <h1>Loading...</h1>
+      </section>
+    );
   }
   const { company, dates, duties, title } = jobs[value];
   return (
